@@ -112,17 +112,17 @@
           <div class="row mb-3">
             <div class="col">
               <label for="first_name">{% trans 'First Name' %}:</label>
-              <input type="text" id="update-author-first-name" name="first_name" value="{{ user.first_name }}" class="form-control" maxlength="50" required>
+              <input type="text" id="update-author-first-name" name="first_name" value="{{ user.first_name }}" class="form-control" maxlength="50" required autocomplete="given-name">
             </div>
             <div class="col">
               <label for="last_name">{% trans 'Last Name' %}:</label>
-              <input type="text" id="update-author-last-name" name="last_name" value="{{ user.last_name }}" class="form-control" maxlength="50" required>
+              <input type="text" id="update-author-last-name" name="last_name" value="{{ user.last_name }}" class="form-control" maxlength="50" required autocomplete="family-name">
             </div>
           </div>
           <div class="row mb-3">
             <div class="col">
               <label for="institution">{% trans 'Institution' %}:</label>
-              <input type="text" id="update-author-institution" name="institution" value="{{ user_author.institution|default_if_none:"" }}" class="form-control" maxlength="100">
+              <input type="text" id="update-author-institution" name="institution" value="{{ user_author.institution|default_if_none:"" }}" class="form-control" maxlength="100" autocomplete="on">
             </div>
           </div>
         </div>
